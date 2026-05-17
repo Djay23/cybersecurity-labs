@@ -14,6 +14,7 @@ Currently pursuing **CompTIA Security+** (SY0-701) and building toward a career 
 | [IT Ticketing System](./it-ticketing/) | osTicket, SLA tiers, Tier 1 scenarios, KB articles | In Progress |
 | [Network Security](./network-security/) | Wireshark, SQL Injection, DNS Poisoning, Buffer Overflow, Kali Linux | Complete |
 | [OS Recovery & Cross-Platform Troubleshooting](./os-recovery/) | macOS, Windows, Diskpart, Bootable Media | Complete |
+| THM SOC Level 1 Analyst | Junior Security Analyst | In Progress |
 
 ---
 
