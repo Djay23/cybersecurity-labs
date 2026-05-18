@@ -49,5 +49,8 @@ There is always a trickle down effect in the event of an incident in regards to 
 
 ---
 
+## What I Would Do Differently in a Real SOC
+In a production SOC environment, the workflow described above would be significantly more structed. Alerts would be triaged against a formal runbook rather than relying solely on analyst jdugement. SIEM would also be integrated with a SOAR platform to automate the process of alert encrichment and threat intelligence and possibly automatically block malicious IP. This step is simplified in the TryHackMe lab by having the analyst perform each step manually.
+
 ## Key Takeaway
 The role of SOC analysts is to monitor networks for anomalies or suspicious activity. When an alert is triggered in the SIEM, their role then switches to escalating to a specialized incident response team for investigation and mitigation.
