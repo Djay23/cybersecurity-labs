@@ -18,10 +18,10 @@ The SOC Level 1 path covers the core skills required for an entry-level Security
 
 | # | Section | Status |
 |---|---------|--------|
-| 01 | Blue Team Introduction | Complete |
+| 01 | Blue Team Introduction | In progress |
 | 02 | SOC Team Internals | Not Started |
 | 03 | Core SOC Solutions | Not Started |
-| 04 | Cyber Defence Frameworks | Not Started |
+| 04 | Cyber Defense Frameworks | Not Started |
 | 05 | Phishing Analysis | Not Started |
 | 06 | Network Traffic Analysis | Not Started |
 | 07 | Network Security Monitoring | Not Started |
