@@ -1,12 +1,13 @@
 # 01 - Blue Team Introduction
 **Path:** TryHackMe SOC Level 1
-**Date Completed:** 2026-05-19
+**Date Completed:** 2026-05-28
 **Status:** Complete
 
 ---
 
 ## What This Section Covers:
 This section covers the different parts of a Security Operations Center (SOC) team and how they all function together. The security department also houses the Chief Information Security Officer (CISO) who takes load off the CEO and focuses on the security aspect of the business. We are introduced to important security tools like SIEM for alert triage, and IP hunters for searching and documenting malicious IP addresses. In addition we are briefly introduced to the GRC and Red teams who specialize in policy compliance and offensive security respectively, as well as the Cyber Incident Response Team (CIRT) who are called in when a breach exceeds the SOC's capacity.
+We are also introduced to the different points of attacks mal-actors tend to focus on: Systems and Humans.
 
 ---
 
@@ -36,6 +37,15 @@ These are companies that outsource security to smaller companies or companies wi
 ### Cyber Incident Response Team (CIRT)
 In the event that a breach occurs and cannot be managed by the SOC team, the heavy hitters (CIRT) are called in. This team contains: CSIRT manager, Forensics lead, Threat intel expert, Threat hunting expert, and a Malware analyst.
 
+### Social Engineering
+Social engineering is the idea of targeting humans through phishing, deepfakes, USB drops or malware downloads. The idea is that instead of trying to crack a potentially impenetrable system and risk detection, human beings are a more susceptible endpoint and can even provide complete access once compromised. 
+
+### Supply Chain attacks
+Supply chain attacks refer to the compromise of software or libraries utilized by various users. If an app is breached, a malicious update can be pushed and then downloaded by all users of the software leading to widespread breaches. When a supply chain compromise is detected, the SOC is responsible for identifying which systems downloaded the malicious update and isolating them before lateral movement occurs. 
+
+### Vulnerabilities
+Vulnerabilities are security flaws that have potential to be exploited. These range from weak passwords to misconfigured systems. Once a vulnerability is discovered it is assigned a Common Vulnerabilities and Exposure (CVE) number and then a patch is prepared. Misconfigurations on the other hand are unrelated to software but instead are born out of flaws in the system during setup by IT usually. When a CVE is flagged, the SOC works with the engineering team to prioritize patching based on severity and exposure. 
+
 ---
 
 ## Tools Used
@@ -47,12 +57,12 @@ In the event that a breach occurs and cannot be managed by the SOC team, the hea
 ---
 
 ## Real-World Application
-Attackers infiltrate a bank and a breach happens, leading to the exposure of customer data. The first people to detect this breach are the SOC analysts and more specifically the L1 junior analysts. After analyzing and triaging the alerts they see that the same malicious IP has appeared in other breaches as well. Because the solution falls outside of their capabilities the problem is documented alongside a proposed fix and escalated to L2. The Senior SOC analyst attempts to rectify the problem but again is unable to and calls in the heavy hitting CIRT. The malware analyst is deployed to understand what type of malware was used in the breach and contain it. The forensics lead ensures the malware is no longer in the system and exposes other actors still lurking. The threat intel expert and threat hunter go after the threat after understanding how it operates and what it specifically targets. After the containment of the malware the GRC steps in to produce policies and standards to prevent future breaches.
+Attackers send a phishing email to a teller at the bank who then unknowingly provides her login credentials to a malicious actor. This results in a breach, leading to the exposure of customer data. The first people to detect this breach are the SOC analysts and more specifically the L1 junior analysts. After analyzing and triaging the alerts they see that the same malicious IP has appeared in other breaches as well. Because the solution falls outside of their capabilities the problem is documented alongside a proposed fix and escalated to L2. The Senior SOC analyst attempts to rectify the problem but again is unable to and calls in the heavy hitting CIRT. The malware analyst is deployed to understand what type of malware was used in the breach and contain it. The forensics lead ensures the malware is no longer in the system and exposes other actors still lurking. The threat intel expert and threat hunter go after the threat after understanding how it operates and what it specifically targets. After the containment of the malware the GRC steps in to produce policies and standards to prevent future breaches.
 
 ---
 
 ## Connections to My Work
-There is always a trickle down effect in the event of an incident in regards to the flow of information. This ties in with the Security Control principles in the CompTIA Security+ material where each control type is paired with someone from the team. Preventative and deterrent measures are implemented by the SOC engineers. If these are somehow breached, next in line are the Junior SOC analysts who perform detective duties to triage the alerts and then escalate to Tier 2 analysts for potential corrective measures. In the event that the breach was severe, this is escalated to the CIRT. Eventually after the situation has been resolved, the GRC team steps in to create policies and standards to minimize another occurrence — a directive control measure applied at the organizational level.
+There is always a trickle down effect in the event of an incident in regards to the flow of information. This ties in with the Security Control principles in the CompTIA Security+ material where each control type is paired with someone from the team. Preventative and deterrent measures are implemented by the SOC engineers. If these are somehow breached, next in line are the Junior SOC analysts who perform detective duties to triage the alerts and then escalate to Tier 2 analysts for potential corrective measures. In the event that the breach was severe, this is escalated to the CIRT. Eventually after the situation has been resolved, the GRC team steps in to create policies and standards to minimize another occurrence, in addition to anti-phishing campaigns. These are directive control measures applied at the organizational level.
 
 ---
 
@@ -62,4 +72,4 @@ In a production SOC environment, the workflow described above would be significa
 ---
 
 ## Key Takeaway
-The role of SOC analysts is to monitor networks for anomalies or suspicious activity. When an alert is triggered in the SIEM, the escalation structure follows from L1 analysts triaging and escalating, to L2 analysts investigating and attempting remediation, and finally to the CIRT when the breach exceeds the SOC's capabilities. Above it all, the CISO owns the security program and the GRC team ensures incidents translate into policy.
+The role of SOC analysts is to monitor networks for anomalies or suspicious activity. When an alert is triggered in the SIEM, the escalation structure follows from L1 analysts triaging and escalating, to L2 analysts investigating and attempting remediation, and finally to the CIRT when the breach exceeds the SOC's capabilities. Above it all, the CISO owns the security program and the GRC team ensures incidents translate into policy. One way attackers can access a system is through social engineering, where people are treated as attack endpoints; once compromised, they grant attackers potentially unrestricted access in a network. 
